@@ -58,4 +58,8 @@ public class TextController : MonoBehaviour {
 					"bag for later.\n\n " + "Press R to return to your cell";
 		if (Input.GetKeyDown(KeyCode.R)) 		{ myState = States.cell; }
 	}
+	void State_cake () {
+		text.text = ""
+		if (Input.GetKeyDown(KeyCode.R)) 		{ myState = States.cell; }
+	}
 }
