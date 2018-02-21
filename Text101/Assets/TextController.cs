@@ -29,9 +29,9 @@ public class TextController : MonoBehaviour {
 	}
 
 	void State_cell () {
-		text.text = "You find yourself in Prison for committing the crime " +
-					"of posting too many dank memes. Your prison sentence " +
-					"is effective for the next ten billion years with no parole.\n\n" +
+		text.text = "You find yourself in Prison for crimes against the state " +
+					"Your prison sentence is effective for the next ten billion years" +
+					"with no parole.\n\n" + 
 					"You sit down in a corner and wonder if it was worth pushing " +
 					"your cis white male privilege on r/dankmemes. Anyways, you see " +
 					"a knife, a pile of manga, and an odd smelling cake under your bed. " +
@@ -59,7 +59,7 @@ public class TextController : MonoBehaviour {
 		if (Input.GetKeyDown(KeyCode.R)) 		{ myState = States.cell; }
 	}
 	void State_cake () {
-		text.text = ""
+		text.text = "You go to look at the cake "
 		if (Input.GetKeyDown(KeyCode.R)) 		{ myState = States.cell; }
 	}
 }
