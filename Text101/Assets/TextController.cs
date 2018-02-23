@@ -59,7 +59,8 @@ public class TextController : MonoBehaviour {
 		if (Input.GetKeyDown(KeyCode.R)) 		{ myState = States.cell; }
 	}
 	void State_cake () {
-		text.text = "You go to look at the cake "
+		text.text = "You go to look at the cake which smells like swedish fish. You notice " +
+					"in the cake a ";
 		if (Input.GetKeyDown(KeyCode.R)) 		{ myState = States.cell; }
 	}
 }
