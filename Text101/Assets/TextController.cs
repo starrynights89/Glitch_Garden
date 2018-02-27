@@ -60,7 +60,23 @@ public class TextController : MonoBehaviour {
 	}
 	void State_cake () {
 		text.text = "You go to look at the cake which smells like swedish fish. You notice " +
-					"in the cake a ";
+					"in the cake a strange object shaped like a ";
 		if (Input.GetKeyDown(KeyCode.R)) 		{ myState = States.cell; }
+	}
+
+	void State_cell_cake() {
+
+	}
+
+	void State_knife_1() {
+
+	}
+
+	void State_manga_1() {
+
+	}
+
+	void State_freedom() {
+		
 	}
 }
