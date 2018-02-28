@@ -82,7 +82,7 @@ public class TextController : MonoBehaviour {
 	}
 
 	void State_manga_1() {
-		text.text = "You ask the guard if he likes  " +
+		text.text = "You ask the guard if he likes manga. He looks at you  " +
 					"\n\n" + "Press R to return to your cell";
 		if (Input.GetKeyDown(KeyCode.R)) 		{ myState = States.cell_cake; }
 	}
@@ -92,3 +92,6 @@ public class TextController : MonoBehaviour {
 					"bed.\n\n" + "Press R to return to your cell";
 	}
 }
+
+
+ 
