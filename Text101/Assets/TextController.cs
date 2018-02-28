@@ -68,23 +68,27 @@ public class TextController : MonoBehaviour {
 	void State_cell_cake() {
 		text.text = "You're back in the cell with the knife, pile of manga, and Ikea toolset. " + 
 					"You notice a guard by the cell and decide to try to offer him one of " +
-					"your items.\n\n" + "Press R to use knife, press M to use manga, press " +
+					"your items.\n\n" + "Press K to use knife, press M to use manga, press " +
 					"T to use Ikea Toolest. ";
-		if (Input.GetKeyDown(KeyCode.R)) 		{ myState = States.knife_1; }
+		if (Input.GetKeyDown(KeyCode.K)) 		{ myState = States.knife_1; }
 		else if (Input.GetKeyDown(KeyCode.M)) 	{ myState = States.manga_1; }
 		else if (Input.GetKeyDown(KeyCode.T)) 	{ myState = States.freedom; }
 	}
 
 	void State_knife_1() {
-		text.text = ""
+		text.text = "Nah, the knife is too dull to threaten anybody with. You throw it under the " +
+					"bed.\n\n" + "Press R to return to your cell";
 		if (Input.GetKeyDown(KeyCode.R)) 		{ myState = States.cell_cake; }
 	}
 
 	void State_manga_1() {
-
+		text.text = "You ask the guard if he likes  " +
+					"\n\n" + "Press R to return to your cell";
+		if (Input.GetKeyDown(KeyCode.R)) 		{ myState = States.cell_cake; }
 	}
 
 	void State_freedom() {
-		
+		text.text = "Nah, the knife is too dull to threaten anybody with. You throw it under the " +
+					"bed.\n\n" + "Press R to return to your cell";
 	}
 }
