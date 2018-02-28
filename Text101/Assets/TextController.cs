@@ -70,13 +70,14 @@ public class TextController : MonoBehaviour {
 					"You notice a guard by the cell and decide to try to offer him one of " +
 					"your items.\n\n" + "Press R to use knife, press M to use manga, press " +
 					"T to use Ikea Toolest. ";
-		if (Input.GetKeyDown(KeyCode.R)) 			{ myState = States.knife_1; }
-		else if (Input.GetKeyDown(KeyCode.M)) 		{ myState = States.manga_1; }
-		else if (Input.GetKeyDown(KeyCode.T)) 		{ myState = States.freedom; }
+		if (Input.GetKeyDown(KeyCode.R)) 		{ myState = States.knife_1; }
+		else if (Input.GetKeyDown(KeyCode.M)) 	{ myState = States.manga_1; }
+		else if (Input.GetKeyDown(KeyCode.T)) 	{ myState = States.freedom; }
 	}
 
 	void State_knife_1() {
-
+		text.text = ""
+		if (Input.GetKeyDown(KeyCode.R)) 		{ myState = States.cell_cake; }
 	}
 
 	void State_manga_1() {
