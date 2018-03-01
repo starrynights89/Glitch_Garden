@@ -18,7 +18,7 @@ public class TextController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		print (myState);
-		if (myState == States.cell) { cell(); }
+		if (myState == States.cell) 			{ cell(); }
 		else if (myState == States.knife_0) 	{ knife_0(); }
 		else if (myState == States.manga_0) 	{ manga_0(); }
 		else if (myState == States.cake) 		{ cake(); }
