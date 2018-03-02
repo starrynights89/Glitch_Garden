@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class NumberWizard : MonoBehaviour {
 	
@@ -19,10 +20,7 @@ public class NumberWizard : MonoBehaviour {
 	void StartGame() {
 		max = 1000;
     	min = -10;
-    	guess = 500;
-
-		max = max + 1;
-		min = min - 1;
+    	NextGuess();
 	}
 
 	public void GuessLower() {
@@ -36,11 +34,11 @@ public class NumberWizard : MonoBehaviour {
 	}
 
 	void NextGuess() {
-		guess = (max + min) / 2; //set the guess halfway between the max and the min
+		guess = Random.Range(min, max+1);
 		maxGuessesAllowed = maxGuessesAllowed - 1; 
 		text.text = guess.ToString();
 		if (maxGuessesAllowed <= 0) {
-			Application.LoadLevel("Win");
+			SceneManager.LoadScene("Win");
 		}
 	}
 }
