@@ -14,4 +14,11 @@ public class LevelManager : MonoBehaviour {
 		Debug.Log("I want to quit!");
 		Application.Quit();
 	}
+
+	public void LoadNextLevel() {
+		Scene current = SceneManager.GetActiveScene();
+		int loadedLevel = current.loadedLevel + 1;
+		SceneManager.LoadScene(SceneManager.loadedLevel + 1)
+		Application.LoadLevel(Application.loadedLevel + 1);
+	}
 }
