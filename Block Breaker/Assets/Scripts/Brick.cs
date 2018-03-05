@@ -5,7 +5,7 @@ using UnityEngine;
 public class Brick : MonoBehaviour {
 
 	public int maxHits;
-	public int timesHit;
+	private int timesHit;
 	// Use this for initialization
 	void Start () {
 		timesHit = 0;
@@ -17,6 +17,6 @@ public class Brick : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D col)
 	{
-		timesHit = timesHit + 1;
+		timesHit++;
 	}
 }
