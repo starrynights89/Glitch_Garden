@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour {
 
+	void Start() {
+
+	}
+
 	public void LoadLevel(string name) {
 		Debug.Log("Level load requested for: "+name);
 		SceneManager.LoadScene(name);
@@ -16,9 +20,6 @@ public class LevelManager : MonoBehaviour {
 	}
 
 	public void LoadNextLevel() {
-		Scene current = SceneManager.GetActiveScene();
-		int loadedLevel = current.loadedLevel + 1;
-		SceneManager.LoadScene(SceneManager.loadedLevel + 1)
 		Application.LoadLevel(Application.loadedLevel + 1);
 	}
 }
