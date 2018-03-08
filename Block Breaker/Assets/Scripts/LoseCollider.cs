@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class LoseCollider : MonoBehaviour {
 
-	private LevelManager levelManager;
+	private SceneController levelManager;
 	void OnTriggerEnter2D(Collider2D trigger)
 	{
-		levelManager = GameObject.FindObjectOfType<LevelManager>();
-		levelManager.LoadLevel("Loose Screen");
+		levelManager = GameObject.FindObjectOfType<SceneController>();
+		levelManager.LoadSceneAsync("Loose Screen");
 	}
 
 	void OnCollisionEnter2D(Collision2D collision)
