@@ -3,11 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
 {
-    //  NOTE:   Be aware that loading scenes by SceneBuildIndex will require you 
-    //          to have your scenes in a specific order, see this post for details;
-    //          https://community.gamedev.tv/t/solved-application-loadlevel-obsolete/8200/2
-
-    private int _activeSceneBuildIndex = 0;
+       private int _activeSceneBuildIndex = 0;
 
     /// <summary>
     /// Initialisation
