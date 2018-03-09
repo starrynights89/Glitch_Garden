@@ -30,7 +30,6 @@ public class SceneController : MonoBehaviour
     public void LoadSceneAsync(string sceneName)
     {
         Debug.Log("New Scene load: " + sceneName);
-        Brick.breakableCount = 0;
         SceneManager.LoadSceneAsync(sceneName);
     }
 
@@ -39,19 +38,7 @@ public class SceneController : MonoBehaviour
     /// </summary>
     public void LoadNextSceneAsync()
     {
-        Brick.breakableCount = 0;
         SceneManager.LoadSceneAsync(++_activeSceneBuildIndex);
-    }
-
-    /// <summary>
-    /// Checks to see if the final brick has been destroyed and loads the next scene if so
-    /// </summary>
-    public void BrickDestroyed()
-    {
-        if (Brick.breakableCount <= 0)
-        {
-            LoadNextSceneAsync();
-        }
     }
 
     /// <summary>
