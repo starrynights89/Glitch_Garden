@@ -254,6 +254,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 1942719628063016, guid: 89bfab19828609c408c7ce3074acca69,
     type: 2}
+  width: 10.25
+  height: 8.88
+  speed: 5
 --- !u!1001 &1020148817
 Prefab:
   m_ObjectHideFlags: 0
