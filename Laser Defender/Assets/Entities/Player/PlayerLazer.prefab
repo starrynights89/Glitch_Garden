@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212217877196444852}
   - component: {fileID: 50756573618245076}
   - component: {fileID: 61894773930979256}
+  - component: {fileID: 114736584537129020}
   m_Layer: 0
   m_Name: PlayerLazer
   m_TagString: Untagged
@@ -55,7 +56,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -87,6 +88,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.1, y: 0.04}
   m_EdgeRadius: 0
+--- !u!114 &114736584537129020
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1456835034151572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1b8933705459354ea171ad267367b3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 100
 --- !u!212 &212217877196444852
 SpriteRenderer:
   m_ObjectHideFlags: 1
