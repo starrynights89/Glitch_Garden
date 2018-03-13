@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemySpawner : MonoBehaviour {
+public class FormationController : MonoBehaviour {
 	public GameObject enemyPrefab;
 	public float width = 10f;
 	public float height = 5f;
@@ -19,6 +19,10 @@ public class EnemySpawner : MonoBehaviour {
 		Vector3 rightBoundary = Camera.main.ViewportToWorldPoint(new Vector3(1,0,distanceToCamera));
 		xmax = rightBoundary.x;
 		xmin = leftBoundary.x;
+		SpawnEnemies();
+	}
+
+	void SpawnEnemies() {
 		foreach( Transform child in transform ) {
 			GameObject enemy = Instantiate(enemyPrefab, child.transform.position,
 			Quaternion.identity) as GameObject;
@@ -38,6 +42,7 @@ public class EnemySpawner : MonoBehaviour {
 			transform.position += Vector3.left * speed * Time.deltaTime;
 		}
 
+		//Check if the formation is going outside the playspace...
 		float rightEdgeOfFormation = transform.position.x + (0.5f*width);
 		float leftEdgeOfFormation = transform.position.x - (0.5f*width);
 		if(leftEdgeOfFormation < xmin) {
@@ -45,5 +50,19 @@ public class EnemySpawner : MonoBehaviour {
 		} else if(rightEdgeOfFormation > xmax) {
 			movingRight = false;
 		}
+
+		if(AllMembersDead()) {
+			Debug.Log("Empty Formation");
+		}
+	}
+
+	bool AllMembersDead() { //for each child position object, count the number of objects 
+							//until child count is 0
+		foreach(Transform childPositionGameObject in transform) {
+			if (childPositionGameObject.childCount > 0) {
+				return false;
+			}
+		}
+		return true;
 	}
 }
