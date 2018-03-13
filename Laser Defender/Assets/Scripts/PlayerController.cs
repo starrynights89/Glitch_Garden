@@ -10,8 +10,8 @@ public class PlayerController : MonoBehaviour {
 	public float firingRate = 0.2f;
 	public float health = 250f;
 
-	float xmin;
-	float xmax;
+	private float xmin;
+	private float xmax;
 
 	// Use this for initialization
 	void Start () {
@@ -40,7 +40,11 @@ public class PlayerController : MonoBehaviour {
 			transform.position += Vector3.left * speed * Time.deltaTime;
 		} else if (Input.GetKey(KeyCode.RightArrow)) {
 			transform.position += Vector3.right * speed * Time.deltaTime;
-		}
+		} /*else if (Input.GetKey(KeyCode.UpArrow)) {
+			transform.position += Vector3.up * speed * Time.deltaTime;
+		} else if (Input.GetKey(KeyCode.DownArrow)) {
+			transform.position += Vector3.down * speed * Time.deltaTime;
+		} */
 
 		// restrict the player to the gamespace
 		float newX = Mathf.Clamp(transform.position.x, xmin, xmax);
