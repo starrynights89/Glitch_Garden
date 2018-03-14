@@ -43,14 +43,13 @@ public class SceneController : MonoBehaviour
     /// <summary>
     /// Checks to see if the ship has been destroyed and loads the next scene if so
     /// </summary>
-    /*
-    public void ShipDestroyed()
+    /*public void ShipDestroyed()
     {
-        if (health <= 0)
+        if (PlayerController.health <= 0)
         {
             LoadNextSceneAsync();
         }
-    } */
+    }*/
 
     /// <summary>
     /// Handles a request to quit the game

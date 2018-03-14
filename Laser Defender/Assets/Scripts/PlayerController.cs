@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour {
 	public float speed = 15.0f;
@@ -68,8 +69,7 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	void Die() {
-		SceneController man = GameObject.Find("SceneController").GetComponent<SceneController>();
-		man.LoadSceneAsync("Win Screen");
 		Destroy(gameObject);
-	}
+        SceneManager.LoadSceneAsync("Win Screen");
+    }
 }
