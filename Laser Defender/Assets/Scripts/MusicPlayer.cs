@@ -6,10 +6,14 @@ public class MusicPlayer : MonoBehaviour {
 
 	static MusicPlayer instance = null; //static instance of music player
 
+	public AudioClip startClip;
+	public AudioClip gameClip;
+	public AudioClip endClip;
+
 	void Awake()
 	{
 		Debug.Log ("Music player Awake " + GetInstanceID());
-		if (instance != null) {
+		if (instance != null && instance != this) {
 			Destroy (gameObject); //destroy object if instance isn't null
 			print ("Duplicate music player self-destructing!");
 		} else {
