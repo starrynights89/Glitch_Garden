@@ -220,19 +220,19 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 47
+    m_Font: {fileID: 12800000, guid: 6d277bb9217c02c4d94372c6a893711c, type: 3}
+    m_FontSize: 38
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 4
-    m_MaxSize: 47
+    m_MinSize: 0
+    m_MaxSize: 73
     m_Alignment: 2
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 123456789
+  m_Text: 0
 --- !u!222 &303618115
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -631,7 +631,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1765129565
+  randomSeed: -105178374
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -7803,6 +7803,48 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2060292312
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4546094707212912, guid: 73e4984bd3ed73c4194d1d8bea46ec1b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4546094707212912, guid: 73e4984bd3ed73c4194d1d8bea46ec1b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4546094707212912, guid: 73e4984bd3ed73c4194d1d8bea46ec1b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4546094707212912, guid: 73e4984bd3ed73c4194d1d8bea46ec1b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4546094707212912, guid: 73e4984bd3ed73c4194d1d8bea46ec1b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4546094707212912, guid: 73e4984bd3ed73c4194d1d8bea46ec1b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4546094707212912, guid: 73e4984bd3ed73c4194d1d8bea46ec1b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4546094707212912, guid: 73e4984bd3ed73c4194d1d8bea46ec1b, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 73e4984bd3ed73c4194d1d8bea46ec1b, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &2088805292
 Prefab:
   m_ObjectHideFlags: 0

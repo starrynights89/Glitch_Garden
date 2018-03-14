@@ -19,7 +19,6 @@ public class SceneController : MonoBehaviour
     private void Initialise()
     {
         Scene activeScene = SceneManager.GetActiveScene();
-
         _activeSceneBuildIndex = activeScene.buildIndex;
     }
 
@@ -40,6 +39,18 @@ public class SceneController : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(++_activeSceneBuildIndex);
     }
+
+    /// <summary>
+    /// Checks to see if the ship has been destroyed and loads the next scene if so
+    /// </summary>
+    /*
+    public void ShipDestroyed()
+    {
+        if (health <= 0)
+        {
+            LoadNextSceneAsync();
+        }
+    } */
 
     /// <summary>
     /// Handles a request to quit the game
