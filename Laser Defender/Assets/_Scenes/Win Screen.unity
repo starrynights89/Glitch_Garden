@@ -254,7 +254,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Congratulations, you have defeated me but I will rise again!
+  m_Text: Game Over
 --- !u!222 &278404878
 CanvasRenderer:
   m_ObjectHideFlags: 0

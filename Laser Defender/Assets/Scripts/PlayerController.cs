@@ -68,7 +68,7 @@ public class PlayerController : MonoBehaviour {
 		}
 	}
 
-	void Die() {
+	void Die() { //load next scene after player dies 
 		Destroy(gameObject);
         SceneManager.LoadSceneAsync("Win Screen");
     }

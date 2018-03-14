@@ -122,8 +122,8 @@ MonoBehaviour:
   health: 150
   shotsPerSeconds: 0.5
   scoreValue: 150
-  fireSound: {fileID: 8300000, guid: d88184ea142fab3428bb3bf15fd2accd, type: 3}
-  deathSound: {fileID: 8300000, guid: d88184ea142fab3428bb3bf15fd2accd, type: 3}
+  fireSound: {fileID: 8300000, guid: d020c42dd5c1a4a43b728ea778d6a85c, type: 3}
+  deathSound: {fileID: 8300000, guid: 05021381f32fe944f842030180e8c31a, type: 3}
 --- !u!212 &212006423221554896
 SpriteRenderer:
   m_ObjectHideFlags: 1
