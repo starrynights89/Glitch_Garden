@@ -1,4 +1,4 @@
-WebGL
+WindowsStandalone
 SceneListBegin?
 Assets/_Scenes/Start Menu.unity
 Assets/_Scenes/Game.unity
@@ -150,4 +150,4 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Position
 89b7a17a4cc01bada9060390cd700511 Assembly-CSharp.dll:.PlayerController
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.MusicPlayer
+300296faaa423b1bf51a0aad10849b4a Assembly-CSharp.dll:.MusicPlayer

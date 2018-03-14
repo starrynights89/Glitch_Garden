@@ -10,6 +10,8 @@ public class MusicPlayer : MonoBehaviour {
 	public AudioClip gameClip;
 	public AudioClip endClip;
 
+	private AudioSource music;
+
 	void Awake()
 	{
 		Debug.Log ("Music player Awake " + GetInstanceID());
@@ -18,9 +20,31 @@ public class MusicPlayer : MonoBehaviour {
 			print ("Duplicate music player self-destructing!");
 		} else {
 			instance = this; 
-			GameObject.DontDestroyOnLoad(transform.root.gameObject); //don't destroy if first 
-		}															// instance is running
+			//don't destroy if first instance is running
+			GameObject.DontDestroyOnLoad(transform.root.gameObject);
+			music = GetComponent<AudioSource>();
+			music.clip = startClip;
+			music.loop = true;
+			music.Play();
+		}														
 	}
+
+	void OnLevelWasLoaded(int level) {
+		Debug.Log("MusicPlayer: loaded level "+level);
+		music.Stop();
+		
+		if(level == 0) {
+			music.clip = startClip;
+		}
+		if(level == 1) {
+			music.clip = gameClip;
+		}
+		if(level == 2) {
+			music.clip = endClip;
+		}
+		music.loop = true;
+		music.Play();
+	} 
 
 	void Start() {
 		Debug.Log ("Music player Start " + GetInstanceID());
