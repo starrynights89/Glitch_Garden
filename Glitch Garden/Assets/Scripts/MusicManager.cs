@@ -5,26 +5,32 @@ using UnityEngine.SceneManagement;
 
 public class MusicManager : MonoBehaviour
 {
-
-    static MusicManager instance = null; //static instance of music player
     public AudioClip[] levelMusicChangeArray;
 
     private AudioSource audioSource;
+    
     // Use this for initialization
-
     void Awake() {
         DontDestroyOnLoad(gameObject);
         Debug.Log("Don't destroy on load: " + name);
 	}
-	 void Start() {
+	 void Start() { //link the audiosource to the audio source component in persistent music object
 		audioSource = GetComponent<AudioSource>();
     }
 
-    void OnEnable() {
+    /*void OnEnable() {
         SceneManager.sceneLoaded += OnSceneLoaded;
-    }
+    }*/
 
-	void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
-		Debug.Log("Playing clip: " + levelMusicChangeArray);
+	void OnLevelWasLoaded(int level) {
+        AudioClip thisLevelMusic = levelMusicChangeArray[level];
+
+		Debug.Log("Playing clip: " + thisLevelMusic);
+
+        if (thisLevelMusic) { // If there's some music attached 
+            audioSource.clip = thisLevelMusic;
+            audioSource.loop = true;
+            audioSource.Play();
+        }
 	}
 }
