@@ -113,6 +113,53 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &179015825
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4490013477625264, guid: 0ad59f86a2dd6f94fb8a496b75ca25b7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490013477625264, guid: 0ad59f86a2dd6f94fb8a496b75ca25b7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490013477625264, guid: 0ad59f86a2dd6f94fb8a496b75ca25b7, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490013477625264, guid: 0ad59f86a2dd6f94fb8a496b75ca25b7, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490013477625264, guid: 0ad59f86a2dd6f94fb8a496b75ca25b7, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490013477625264, guid: 0ad59f86a2dd6f94fb8a496b75ca25b7, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490013477625264, guid: 0ad59f86a2dd6f94fb8a496b75ca25b7, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490013477625264, guid: 0ad59f86a2dd6f94fb8a496b75ca25b7, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114642041453009826, guid: 0ad59f86a2dd6f94fb8a496b75ca25b7,
+        type: 2}
+      propertyPath: autoLoadNextLevel
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 0ad59f86a2dd6f94fb8a496b75ca25b7, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &497158673
 GameObject:
   m_ObjectHideFlags: 0
@@ -157,6 +204,12 @@ MonoBehaviour:
   levelMusicChangeArray:
   - {fileID: 0}
   - {fileID: 8300000, guid: 9c4dca43f56cdb34a9dce4f8e61066c1, type: 3}
+  - {fileID: 0}
+  - {fileID: 8300000, guid: 9eede4cef9029de44b166d8e104b5e9c, type: 3}
+  - {fileID: 8300000, guid: 198b2ebe1d20eca4ead0df9c63be1b15, type: 3}
+  - {fileID: 8300000, guid: b3d360aa4f8dd8d43a3e4e40a4b74771, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!82 &497158676
 AudioSource:
   m_ObjectHideFlags: 0
@@ -278,7 +331,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -596,47 +649,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &1244501932
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1244501934}
-  - component: {fileID: 1244501933}
-  m_Layer: 0
-  m_Name: LevelManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1244501933
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1244501932}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0712b92268a6fd841b969c3ae9edcf29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  autoLoadNextLevel: 3
---- !u!4 &1244501934
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1244501932}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 389.50446, y: 195.17406, z: -5.1178927}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2115598804
 GameObject:
   m_ObjectHideFlags: 0

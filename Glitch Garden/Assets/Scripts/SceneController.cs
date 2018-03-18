@@ -8,9 +8,10 @@ public class SceneController : MonoBehaviour
     /// <summary>
     /// Initialisation
     /// </summary>
-    void Start()
-    {
-        if (autoLoadNextLevel > 0) {
+    void Start() {
+        if (autoLoadNextLevel == 0) {
+            Debug.Log ("Level auto load disabled");
+        } else {
             Invoke("LoadNextLevel", autoLoadNextLevel);
         }
     }
