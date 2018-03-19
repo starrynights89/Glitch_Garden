@@ -33,4 +33,8 @@ public class MusicManager : MonoBehaviour
             audioSource.Play();
         }
 	}
+
+    public void SetVolume(float volume) { //save value of changed volume
+        audioSource.volume = volume;
+    }
 }
