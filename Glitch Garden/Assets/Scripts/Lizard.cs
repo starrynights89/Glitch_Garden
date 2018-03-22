@@ -6,12 +6,12 @@ using UnityEngine;
 [RequireComponent (typeof(Attacker))]
 public class Lizard : MonoBehaviour {
 
-	private Animator anime;
+	private Animator animator;
 	private Attacker attacker;
 
 	// Use this for initialization
 	void Start () {
-		anime = GetComponent<Animator>();
+		animator = GetComponent<Animator>();
 		attacker = GetComponent<Attacker>();
 	}
 	
@@ -27,7 +27,7 @@ public class Lizard : MonoBehaviour {
 		if (!obj.GetComponent<Defender>()) {
 			return;
 		}
-		anime.SetBool ("isAttacking", true);
+		animator.SetBool ("isAttacking", true);
 		attacker.Attack(obj);
 	}
 }

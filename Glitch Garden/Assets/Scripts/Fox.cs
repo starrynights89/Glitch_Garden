@@ -6,12 +6,12 @@ using UnityEngine;
 [RequireComponent (typeof(Attacker))]
 public class Fox : MonoBehaviour {
 
-	private Animator anime;
+	private Animator animator;
 	private Attacker attacker;
 
 	// Use this for initialization
 	void Start () {
-		anime = GetComponent<Animator>();
+		animator = GetComponent<Animator>();
 		attacker = GetComponent<Attacker>();
 	}
 	
@@ -29,9 +29,9 @@ public class Fox : MonoBehaviour {
 		}
 
 		if(obj.GetComponent<Stone>()) {
-			anime.SetTrigger("jumpTrigger");
+			animator.SetTrigger("jumpTrigger");
 		} else {
-			anime.SetBool ("isAttacking", true);
+			animator.SetBool ("isAttacking", true);
 			attacker.Attack(obj);
 		}
 	}
