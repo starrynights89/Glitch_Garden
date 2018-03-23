@@ -13,9 +13,9 @@ public class DefenderSpawner : MonoBehaviour {
 	void Update () {
 		
 	}
-
+    /*
 	void OnMouseDown() {
 		print ("clicked");
 		Input.mousePosition
-	}
+	}*/
 }
