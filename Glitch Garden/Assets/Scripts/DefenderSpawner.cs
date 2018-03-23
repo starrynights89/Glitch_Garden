@@ -4,18 +4,21 @@ using UnityEngine;
 
 public class DefenderSpawner : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-    /*
+	public Camera myCamera;
+
 	void OnMouseDown() {
-		print ("clicked");
-		Input.mousePosition
-	}*/
+		print (Input.mousePosition);
+		print (CalculateWorldPointOfMouseClick());
+	}
+
+	Vector2 CalculateWorldPointOfMouseClick() {
+		float mouseX = Input.mousePosition.x;
+		float mouseY = Input.mousePosition.y;
+		float distanceFromCamera = 10f;
+
+		Vector3 weirdTriplet = new Vector3 (mouseX, mouseY, distanceFromCamera);
+		Vector2 worldPos = myCamera.ScreenToWorldPoint (weirdTriplet);
+
+		return worldPos;
+	}
 }
