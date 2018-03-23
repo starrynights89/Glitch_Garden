@@ -6,9 +6,30 @@ public class DefenderSpawner : MonoBehaviour {
 
 	public Camera myCamera;
 
+	private GameObject defenderParent;
+
+	void Start() {
+		defenderParent = GameObject.Find ("Defenders");
+
+		if (!defenderParent) {
+			defenderParent = new GameObject("Defenders");
+		}
+	}
+
 	void OnMouseDown() {
-		print (Input.mousePosition);
-		print (CalculateWorldPointOfMouseClick());
+		Vector2 rawPos = CalculateWorldPointOfMouseClick();
+		Vector2 roundedPos = SnapToGrid (rawPos);
+		GameObject defender = Button.selectedDefender;
+		Quaternion zeroRot= Quaternion.identity;
+		GameObject newDef = Instantiate (defender, roundedPos, zeroRot) as GameObject;
+
+		newDef.transform.parent = defenderParent.transform;
+	}
+
+	Vector2 SnapToGrid(Vector2 rawWorldPos) {
+		float newX = Mathf.RoundToInt (rawWorldPos.x);
+		float newY = Mathf.RoundToInt (rawWorldPos.y);
+		return new Vector2 (newX, newY);
 	}
 
 	Vector2 CalculateWorldPointOfMouseClick() {
