@@ -180,7 +180,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 1443475093890708, guid: a7bf0b2dbd2f7d245aa754ed9e62bb88, type: 2}
-  projectileParent: {fileID: 0}
+  projectileParent: {fileID: 1444042209314404, guid: a5f02dbdb544c214488adfea5f4a6269,
+    type: 2}
   gun: {fileID: 1673834889401134}
 --- !u!212 &212610891134655860
 SpriteRenderer:
