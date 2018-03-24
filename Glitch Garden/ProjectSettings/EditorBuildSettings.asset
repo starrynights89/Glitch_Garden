@@ -27,5 +27,5 @@ EditorBuildSettings:
     path: Assets/_Scenes/03a Win.unity
     guid: ef9ec56d228f56749976856917f356d2
   - enabled: 1
-    path: Assets/_Scenes/03b Loose.unity
+    path: Assets/_Scenes/03b Lose.unity
     guid: c7e42a044211a8f4ea04a9a190b29e46

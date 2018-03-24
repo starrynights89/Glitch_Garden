@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4504964834017478}
   - component: {fileID: 61696959070284656}
-  - component: {fileID: 114729643034488744}
+  - component: {fileID: 114078292808816146}
   m_Layer: 0
   m_Name: Shredder
   m_TagString: Untagged
@@ -35,7 +35,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1678350871779616}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 16, y: 3, z: 0}
+  m_LocalPosition: {x: -1.87, y: 3, z: 0}
   m_LocalScale: {x: 4.3, y: 8, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -66,7 +66,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &114729643034488744
+--- !u!114 &114078292808816146
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -74,6 +74,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1678350871779616}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1232edee962c2764588db68284f81a6c, type: 3}
+  m_Script: {fileID: 11500000, guid: 05d45388364b4c94c9fb3962a86e367e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
