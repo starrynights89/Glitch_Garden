@@ -774,6 +774,11 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 332622659}
+    - target: {fileID: 114311799236260440, guid: 96b61ece8d61d944da762ed2fb72ecc7,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 332622659}
     - target: {fileID: 114225089574201770, guid: 96b61ece8d61d944da762ed2fb72ecc7,
         type: 2}
       propertyPath: myCamera
@@ -782,16 +787,6 @@ Prefab:
     - target: {fileID: 1050430371929998, guid: 96b61ece8d61d944da762ed2fb72ecc7, type: 2}
       propertyPath: m_Name
       value: Level Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 114311799236260440, guid: 96b61ece8d61d944da762ed2fb72ecc7,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 332622659}
-    - target: {fileID: 114311799236260440, guid: 96b61ece8d61d944da762ed2fb72ecc7,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadLevel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 96b61ece8d61d944da762ed2fb72ecc7, type: 2}
