@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class LoseCollider : MonoBehaviour {
 
-	private SceneController LevelManager; 
+	private SceneController LevelManager;
+
+	void Start() {
+		LevelManager = GameObject.FindObjectOfType<SceneController>();
+	} 
 
 	void OnTriggerEnter2D() {
-		LevelManager = GameObject.FindObjectOfType<SceneController>();
 		LevelManager.LoadLevel("03b Lose");
 	}
 }
