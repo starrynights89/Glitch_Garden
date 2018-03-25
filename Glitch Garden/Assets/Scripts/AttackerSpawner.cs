@@ -33,12 +33,6 @@ public class AttackerSpawner : MonoBehaviour {
 
 		float threshold = spawnPerSecond * Time.deltaTime / 5;
 
-		if (Random.value < threshold) {
-			return true;
-		} else {
-			return false;
-		}
-
-		//return true;
+		return (Random.value < threshold);
 	}
 }
