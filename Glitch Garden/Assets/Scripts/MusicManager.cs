@@ -16,6 +16,7 @@ public class MusicManager : MonoBehaviour
 	}
 	 void Start() { //link the audiosource to the audio source component in persistent music object
 		audioSource = GetComponent<AudioSource>();
+        audioSource.volume = PlayerPrefsManager.GetMasterVolume();
     }
 
     /*void OnEnable() {

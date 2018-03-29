@@ -1,4 +1,4 @@
-Android
+WindowsStandalone
 SceneListBegin?
 Assets/_Scenes/00 Splash Screen.unity
 Assets/_Scenes/01a Start.unity
@@ -130,6 +130,7 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Editor.Placeholder
 0f5b1f4332e3a985540b12a006449eb6 Assembly-CSharp.dll:.Button
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.LoseCollider
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.StarDisplay
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
@@ -148,6 +149,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 6ee5b228f1b0ee47a122868b01e9046b Assembly-CSharp.dll:.Attacker
 31727e1cdecc02ffdc0615e6e47e35ea Assembly-CSharp.dll:.Projectile
 1ee61589c4017d070ab4a6631b0d36f8 Assembly-CSharp.dll:.MusicManager
+f84b96aac26dec9f4ef6bda2c3fdc6b2 Assembly-CSharp.dll:.GameTimer
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
 96d0fbde9fd209878a0a291f82c9bcdd UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.PlaymodeTestsController
 64eb32cc721b1cc68a91ed57461e188c UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.RemoteTestResultSender
@@ -163,6 +165,4 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 398554aabefd97fa33a6d657861625d2 Assembly-CSharp.dll:.AttackerSpawner
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Shredder
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SetStartVolume
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Lizard
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.LoseCollider
